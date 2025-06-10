@@ -19,6 +19,9 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    ignore:
+      - dependency-name: "module-two/pom.xml"
+        versions: [ "> 0" ]
     groups:
       all-module-updates:
         applies-to: 'version-updates'
@@ -27,7 +30,7 @@ updates:
         update-types:
           - "minor"
           - "patch"
-    ignore:
-      - dependency-name: "*"
-        versions: [ "> 0" ]
-        directories: [ "/module-two" ]
+  - package-ecosystem: "maven"
+    directory: "/module-two"
+    schedule:
+      interval: "weekly"
