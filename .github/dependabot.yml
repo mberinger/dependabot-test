@@ -12,9 +12,9 @@ updates:
         update-types:
           - "minor"
           - "patch"
-#    ignore:
-#      - dependency-name: "org.apache.maven.plugins:maven-surefire-plugin"
-#        versions: [ ">=3.5.2" ]
+    ignore:
+      - dependency-name: "org.apache.maven.plugins:maven-surefire-plugin"
+        versions: [ ">=3.5.2" ]
 #  - package-ecosystem: "maven"
 #    directory: "/module-two"
 #    schedule:
