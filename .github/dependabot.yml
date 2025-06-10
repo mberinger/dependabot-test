@@ -1,7 +1,7 @@
 version: 2
 updates:
   - package-ecosystem: "maven"
-    directory: "/"
+    directory: "/module-two"
     schedule:
       interval: "weekly"
     groups:
@@ -14,19 +14,16 @@ updates:
           - "patch"
     ignore:
       - dependency-name: "org.apache.maven.plugins:maven-surefire-plugin"
-        versions: [ ">=3.5.2" ]
-#  - package-ecosystem: "maven"
-#    directory: "/module-two"
-#    schedule:
-#      interval: "weekly"
-#    groups:
-#      non-major-updates:
-#        applies-to: 'version-updates'
-#        patterns:
-#          - '*'
-#        update-types:
-#          - "minor"
-#          - "patch"
-#    ignore:
-#      - dependency-name: "org.apache.maven.plugins:maven-surefire-plugin"
-#        versions: [ ">3.5.2" ]
+        versions: [ ">3.5.2" ]
+  - package-ecosystem: "maven"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    groups:
+      non-major-updates:
+        applies-to: 'version-updates'
+        patterns:
+          - '*'
+        update-types:
+          - "minor"
+          - "patch"
