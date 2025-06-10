@@ -5,7 +5,7 @@ updates:
     schedule:
       interval: "weekly"
     groups:
-      non-major-updates:
+      module-two-specific-updates:
         applies-to: 'version-updates'
         patterns:
           - '*'
@@ -20,7 +20,7 @@ updates:
     schedule:
       interval: "weekly"
     groups:
-      non-major-updates:
+      all-module-updates:
         applies-to: 'version-updates'
         patterns:
           - '*'
