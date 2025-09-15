@@ -15,7 +15,7 @@
 	</modules>
 
 	<properties>
-		<surefire.version>3.5.3</surefire.version>
+		<surefire.version>3.5.4</surefire.version>
 	</properties>
 
 	<build>
